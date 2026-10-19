@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Lab | Inicio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title"><i class="fas fa-rocket"></i> Talento Lab</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="#productos" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="#reseñas" class="nav__link">Reseñas</a></li>
+                    <li class="nav__item"><a href="pages/contacto.html" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección de Bienvenida / Multimedia -->
+        <section class="hero">
+            <div class="hero__content">
+                <h2>Aprende Desarrollo Web con Proyectos Reales</h2>
+                <p>Formamos a la próxima generación de talentos digitales con metodologías modernas y proyectos prácticos.</p>
+                <div class="hero__video">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Video de presentación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Productos (Flexbox) -->
+        <section id="productos" class="productos">
+            <h2 class="section-title">Nuestros Cursos y Servicios</h2>
+            <div class="productos__container">
+                <article class="card-producto">
+                    <img src="https://via.placeholder.com/300x180/667eea/ffffff?text=Front-End+JS" alt="Curso Front-End JS" class="card-producto__img">
+                    <h3 class="card-producto__title">Desarrollo Front-End JS</h3>
+                    <p class="card-producto__desc">Aprende HTML5, CSS3, JavaScript y crea interfaces web modernas e interactivas.</p>
+                    <span class="card-producto__price">$15.000 ARS</span>
+                    <button class="card-producto__btn"><i class="fas fa-cart-plus"></i> Comprar curso</button>
+                </article>
+
+                <article class="card-producto">
+                    <img src="https://via.placeholder.com/300x180/764ba2/ffffff?text=UX+UI+Design" alt="Curso Diseño UX UI" class="card-producto__img">
+                    <h3 class="card-producto__title">Diseño UX/UI Pro</h3>
+                    <p class="card-producto__desc">Diseña experiencias intuitivas, prototipos interactivos y sistemas de diseño escalables.</p>
+                    <span class="card-producto__price">$18.500 ARS</span>
+                    <button class="card-producto__btn"><i class="fas fa-cart-plus"></i> Comprar curso</button>
+                </article>
+
+                <article class="card-producto">
+                    <img src="https://via.placeholder.com/300x180/2c3e50/ffffff?text=Back-End+Node" alt="Curso Back-End Node" class="card-producto__img">
+                    <h3 class="card-producto__title">Desarrollo Back-End</h3>
+                    <p class="card-producto__desc">Construye APIs RESTful robustas, gestión de bases de datos y servidores con Node.js.</p>
+                    <span class="card-producto__price">$20.000 ARS</span>
+                    <button class="card-producto__btn"><i class="fas fa-cart-plus"></i> Comprar curso</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas (CSS Grid) -->
+        <section id="reseñas" class="reseñas">
+            <h2 class="section-title">Opiniones de Nuestros Estudiantes</h2>
+            <div class="reseñas__container">
+                <article class="card-reseña">
+                    <div class="card-reseña__header">
+                        <i class="fas fa-user-circle card-reseña__avatar"></i>
+                        <div>
+                            <h4>Lucía Gómez</h4>
+                            <small>Estudiante de Front-End</small>
+                        </div>
+                    </div>
+                    <p class="card-reseña__body">"Excelente curso. Las clases son súper claras y los ejercicios guiados por mentores me ayudaron muchísimo a perder el miedo a programar."</p>
+                </article>
+
+                <article class="card-reseña">
+                    <div class="card-reseña__header">
+                        <i class="fas fa-user-circle card-reseña__avatar"></i>
+                        <div>
+                            <h4>Tomás Rodríguez</h4>
+                            <small>Desarrollador Junior</small>
+                        </div>
+                    </div>
+                    <p class="card-reseña__body">"Logré publicar mi primer proyecto usando Flexbox y Grid en tiempo récord. Recomiendo totalmente Talento Lab."</p>
+                </article>
+
+                <article class="card-reseña">
+                    <div class="card-reseña__header">
+                        <i class="fas fa-user-circle card-reseña__avatar"></i>
+                        <div>
+                            <h4>Mariana López</h4>
+                            <small>Diseñadora Web</small>
+                        </div>
+                    </div>
+                    <p class="card-reseña__body">"La combinación entre teoría y práctica hace que todo el proceso sea dinámico y entretenido. ¡El contenido de CSS responsivo es excelente!"</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>&copy; 2024 Talento Lab. Todos los derechos reservados. Desarrollado para Talento Tech.</p>
+    </footer>
+
+</body>
+</html>
